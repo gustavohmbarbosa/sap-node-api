@@ -1,0 +1,26 @@
+{
+  "name": "sap-node-api",
+  "version": "1.0.0",
+  "description": "API desenvolvida na matéria de servidores e aplicações web(SAP)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavohmbarbosa/sap-node-api.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Gustavo Henrique",
+    "email": "gustavobarbosa-18@hotmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gustavohmbarbosa/sap-node-api/issues"
+  },
+  "homepage": "https://github.com/gustavohmbarbosa/sap-node-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
