@@ -1,16 +1,12 @@
 const express = require('express');
 const app = express();
-const port = 3000;
-const User = require('./Entities/User');
+const port = 3100;
+const routes = require('./routes.js');
 
-app.get('/', (req, res) => {
-  let users = [];
-  for (let i = 0; i < 10; i++) {
-    let user = new User(i, `js${i}@gmail.com`);
-    users.push(user.getData());
-  }
-  res.send(users);
-});
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(routes);
 
 app.listen(port, () => {
   console.log(`Example app listening at https://sap-node-api.gustavohmbarbosa.repl.co/`);

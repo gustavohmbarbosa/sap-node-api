@@ -1,7 +1,7 @@
 class User {
-  constructor(name, email) {
-    this.name = name;
-    this.email = email;
+  constructor(data) {
+    this.name = data.name;
+    this.email = data.email;
   }
 
   getData() {
